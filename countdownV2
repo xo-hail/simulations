@@ -1,5 +1,4 @@
 from time import sleep
-import time
 # Countdown
 
 countdown = 10
@@ -12,12 +11,13 @@ for countdown in range(10, -1, -1):
 		print(char, end="", flush=True)
 		sleep(0.5)
 
-# I want the game over to replace the countdown :(
-print()
+print("\r                 ", end="") 
+print("\r", end="")
 
-if countdown == 0:
-    for char in game_over:
+for char in game_over:
         print(char, end="", flush=True)
-        sleep(0.2)
+        sleep(0.3)
 
-sleep(1)
+import sys
+exit()
+
