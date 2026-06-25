@@ -1,0 +1,14 @@
+from time import sleep
+import time
+# Countdown
+
+countdown = 10
+ellipsis = " .."
+
+for countdown in range(10, -1, -1):
+	print("\r " + str(countdown), end="", flush=True)
+	for char in ellipsis:
+		print(char, end="", flush=True)
+		sleep(0.5)
+print("\nGame over.")
+sleep (1)
