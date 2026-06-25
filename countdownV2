@@ -1,0 +1,23 @@
+from time import sleep
+import time
+# Countdown
+
+countdown = 10
+ellipsis = " .."
+game_over = "Game over."
+
+for countdown in range(10, -1, -1):
+	print("\r " + str(countdown), end="", flush=True)
+	for char in ellipsis:
+		print(char, end="", flush=True)
+		sleep(0.5)
+
+# I want the game over to replace the countdown :(
+print()
+
+if countdown == 0:
+    for char in game_over:
+        print(char, end="", flush=True)
+        sleep(0.2)
+
+sleep(1)
